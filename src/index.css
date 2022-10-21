@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+    text-decoration: none;
+    list-style: none;
+}
+:root {
+    --primary: #4e39a1;
+    --secondary: #8875d0;
+    --primary-light: #a66cff;
+    --light-bg: #eeeeee;
+    --padding-left: 60px;
+    --padding-right: 60px;
+}
+.container {
+    margin: 0 auto;
+    width: 1260px;
+}

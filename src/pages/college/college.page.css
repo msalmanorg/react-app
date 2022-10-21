@@ -1,0 +1,117 @@
+.sideBar-content-container {
+    display: flex;
+}
+/* content section */
+.sideBar-content-container .content {
+    width: 72%;
+    padding-right: var(--padding-right);
+    padding-left: 50px;
+    padding-top: 50px;
+}
+.college-page-content {
+}
+.college-headings-selects-titles {
+}
+.college-headings-selects-titles .college-heading {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+    color: var(--primary);
+}
+.college-selects {
+    margin: 20px 0 00 0;
+}
+.college-selects .college-select {
+    margin: 20px 0 0 0;
+    display: flex;
+    background-color: var(--light-bg);
+    border-radius: 5px;
+    align-items: center;
+}
+.college-selects .college-select .select-title {
+    padding: 14px 15px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    min-width: 155px;
+    border-right: 1px solid var(--secondary);
+}
+.college-selects .college-select .select-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 0 20px;
+    align-items: center;
+    width: 80%;
+}
+.college-select .select-info .select-next-btn {
+    width: 28px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c8c1df;
+    color: var(--primary);
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.college-select .select-info .select-next-btn:hover {
+    color: white;
+    background-color: var(--primary);
+}
+.college-select .select-info .select-options {
+    display: flex;
+    flex-wrap: wrap;
+}
+.college-select .select-info .select-options .select-option {
+    background-color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    color: #838188;
+    padding: 5px 10px;
+    border-radius: 7px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.select-info .select-options .select-option:hover {
+    background-color: var(--secondary);
+    color: white;
+}
+.college-select-sort {
+    display: flex;
+    width: max-content;
+}
+.college-select-sort .select-title {
+    /* background-color: red; */
+}
+.college-select-sort .select-info {
+}
+.college-select-sort .select-info .select-sort-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px 0 0;
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #7a7880;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.college-select-sort .select-info .select-sort-btn:hover {
+    color: var(--primary);
+}
+.college-select-sort .select-info .select-sort-btn span {
+    margin: 0 3px 0 0;
+}
+/* course card */
+.courses-container {
+    margin: 50px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}

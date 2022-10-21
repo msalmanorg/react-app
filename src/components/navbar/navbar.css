@@ -1,0 +1,136 @@
+.navbar-header {
+    width: 100%;
+    box-shadow: 0px 0 16px -1px #8080808a;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    padding-left: var(--padding-left);
+    padding-right: var(--padding-right);
+    align-items: center;
+}
+.navbar .logo {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+.navbar .logo img {
+    width: 80px;
+}
+.navbar .nav {
+    width: 50%;
+    padding-top: 20px;
+}
+.navbar .nav ul {
+    display: flex;
+}
+.navbar .nav li:not(:last-child) {
+    margin: 0 40px 0 0;
+}
+
+.navbar .nav li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #5a5757;
+    align-items: center;
+    padding: 2px 3px 0;
+    cursor: pointer;
+}
+.navbar .nav li a :first-child {
+    color: #aca7a7;
+    font-size: 27px;
+}
+.navbar .nav li a p {
+    margin: 3px 0 9px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.navbar .nav li a span {
+    display: block;
+    background-color: var(--secondary);
+    border-radius: 3px;
+    height: 5px;
+    width: 100%;
+    opacity: 0;
+}
+.navbar .nav li a,
+.navbar .nav li a :first-child {
+    transition: all 0.3s ease;
+}
+.navbar .nav li a.active span {
+    opacity: 1;
+}
+.navbar .nav li a:hover,
+.navbar .nav li a:hover :first-child {
+    color: var(--secondary);
+}
+.navbar .nav li .active,
+.navbar .nav li .active :first-child {
+    color: var(--secondary);
+}
+.navbar .header-info-btns {
+    width: 30%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.header-info-btns div {
+    display: flex;
+}
+.header-info-btns .header-info {
+    margin: 0 30px 0 0;
+}
+.header-info-btns .header-info a {
+    font-size: 23px;
+    color: #57545e;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.header-info-btns .header-info a:hover {
+    color: var(--secondary);
+}
+.header-info-btns .header-info a:last-child {
+    margin: 0 0px 0 35px;
+}
+.header-info-btns .header-info a.has-notification {
+    position: relative;
+}
+.header-info-btns .header-info a.has-notification::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary);
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    right: 2px;
+}
+.header-info-btns .header-btns a {
+    padding: 7px 15px;
+    font-size: 15px;
+    color: var(--primary);
+    display: block;
+    border: 1px solid;
+    border: 1px solid;
+    border-color: var(--primary);
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.header-info-btns .header-btns a:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+.header-info-btns .header-btns a:last-child {
+    background-color: var(--primary);
+    color: white;
+    margin: 0 0px 0 10px;
+}
+.header-info-btns .header-btns a:last-child:hover {
+    background-color: white;
+    color: var(--primary);
+}

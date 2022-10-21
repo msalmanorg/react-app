@@ -1,0 +1,145 @@
+.course-card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 8px -2px grey;
+}
+.course-card .course-header {
+    display: flex;
+    flex-direction: column;
+}
+.course-card .course-header .college-img {
+    width: 100%;
+    height: 90px;
+}
+.course-card .course-header .college-img img {
+    width: 100%;
+    height: 100%;
+}
+.course-card .course-header .college-name {
+    background-color: #ebebeb;
+    padding: 0 2px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    color: #312e3a;
+    font-weight: 500;
+}
+
+.course-card .course-header .college-name a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.course-card .college-description {
+    padding: 10px 15px;
+    font-size: 12px;
+}
+.course-card .college-description .college-info {
+    display: flex;
+}
+.course-card .college-description .college-info .college-syllabus {
+    margin-left: auto;
+    text-transform: uppercase;
+}
+.course-card .college-description .college-info div {
+    display: flex;
+    align-items: center;
+}
+.course-card .college-description .college-info div :first-child {
+    margin: 0 4px 0 0;
+}
+.course-card .college-description .course-info,
+.course-card
+    .college-description
+    .course-info
+    .course-property:not(:last-child)
+    .course-property-title,
+.course-card
+    .college-description
+    .course-ratings
+    .course-rating-item:not(:last-child) {
+    border: 1px solid #d4cdf0;
+}
+
+.course-card .college-description .course-info {
+    margin: 7px 0;
+    padding: 7px 0;
+    border-left: none;
+    border-right: none;
+    display: flex;
+}
+.course-card .college-description .course-info .course-property,
+.course-card .college-description .course-ratings .course-rating-item {
+    width: 25%;
+    text-align: center;
+    padding: 2px 0px 2px 2px;
+    cursor: context-menu;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+}
+.course-card .college-description .course-info .course-property:hover,
+.course-card .college-description .course-ratings .course-rating-item:hover {
+    background-color: var(--light-bg);
+}
+.course-card
+    .college-description
+    .course-info
+    .course-property
+    .course-property-title {
+    font-weight: 500;
+    margin: 0 00 3px 0;
+}
+.course-card
+    .college-description
+    .course-info
+    .course-property:not(:last-child)
+    .course-property-title,
+.course-card
+    .college-description
+    .course-ratings
+    .course-rating-item:not(:last-child) {
+    border-left: none;
+    border-bottom: none;
+    border-top: none;
+}
+
+.course-card .college-description .course-ratings {
+    display: flex;
+}
+.course-card
+    .college-description
+    .course-ratings
+    .course-rating-item
+    :first-child {
+    margin: 0 5px 0 0;
+}
+.course-card .course-btns {
+    display: flex;
+}
+.course-card .course-btns a:first-child {
+    border-right: 1px solid var(--primary);
+}
+.course-card .course-btns a {
+    width: 50%;
+    background: #aea6cd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 0;
+    font-size: 14px;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-weight: 500;
+}
+.course-card .course-btns a span {
+    transition: all 0.3s ease;
+    transform-origin: left;
+}
+
+.course-card .course-btns a:hover span {
+    transform: scale(1.05);
+}
